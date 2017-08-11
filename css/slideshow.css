@@ -1,0 +1,93 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: sans-serif; 
+}
+
+img {
+	max-width: 100%;
+}
+
+.cycle-slideshow {
+	width: 100%;
+	max-width: 900px;
+	max-height: 500px;
+	display: block;
+	position: relative;
+	margin: 10px auto 5px auto;
+	overflow: hidden;
+	border: 10px solid #FFF;
+	box-shadow: 0px 0px 15px #888888;
+}
+
+.cycle-prev, .cycle-next {
+	font-size: 200%;
+	color: rgba(255,255,255,.35);
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	z-index: 9999;
+	cursor: pointer;
+}
+
+.cycle-prev {
+	left: 0;
+	background: rgba(0,0,0, .3);
+	padding: 7px 7px 2px 2px;
+}
+
+.cycle-next {
+	right: 0;
+	background: rgba(0,0,0, .3);
+	padding: 7px 2px 2px 7px;
+}
+
+.cycle-pager {
+	width: 100%;
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	z-index: 9999;
+	cursor: pointer;
+}
+
+.cycle-pager span {
+	text-indent: 100%;
+	white-space: nowrap;
+	width: 7px;
+	height: 10px;
+	display: inline-block;
+	border: 1px solid #FFF;
+	border-radius: 0;
+	margin: 0 2px;
+}
+
+.cycle-pager .cycle-pager-active {
+	background-color: rgba(255,255,255,.5);
+}
+
+.center {
+	text-align: center;
+	margin: 10px auto 20px auto;
+}
+
+#portheader {
+	text-align: center;
+	margin: 70px 0 0 0;
+}
+
+.btns {
+	padding: 8px 15px 5px 16px;
+	margin: 0 3px 0 3px;
+}
+
+#buttons {
+	position: relative;
+	display: block;
+	width: 265px;
+	margin: 10px auto;
+}

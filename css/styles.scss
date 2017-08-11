@@ -1,0 +1,310 @@
+html {
+  width:100%;
+  height:100%;
+}
+
+
+body {
+  width:100%;
+  height:100%;
+  font-family: "Raleway", Arial, sans-serif;
+  color: #333333; /* this is the DARK color */
+  background-color: #f4f4f4; /* this is the LIGHT color */
+}
+
+
+/* Typography */
+h1, h2, h4, h5, h6 {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+p {
+  margin: 0 0 25px;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+a {
+  color: white; /* this is the PRIMARY color */
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+
+/* Navigation */
+
+.navbar {
+  margin-bottom: 0px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  text-transform: uppercase;
+  font-family: "Raleway", Arial, sans-serif;
+  background-color: #333333; /* this is the DARK color */
+}
+
+.navbar-brand{
+  list-style: none;
+  font-weight: 400;
+  color: #f4f4f4;
+  margin-top: 5px;
+  padding:0;
+  height: 40px;
+}
+
+.navbar-brand img{
+  margin-top:-9px;
+  padding:0;
+  height: 40px;
+}
+
+.navbar-brand:focus {
+  outline: none;
+  color: #333333;
+}
+
+.navbar-custom .nav li a{
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover{
+  outline: none;
+  background-color: rgba(255,255,255,0.65);
+}
+
+.navbar-toggle {
+  padding: 4px 6px;
+  font-size: 16px;
+  color: #f4f4f4; /* this is the LIGHT color */
+}
+
+@media(min-width: 767px) {
+  .navbar {
+    padding: 20px 0;
+    border-bottom: none;
+    background: transparent;
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+  }
+
+  .top-nav-collapse {
+    padding: 0;
+    background-color: #181818; /* this is the DARK color */
+  }
+
+  .navbar-custom.top-nav-collapse {
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0px 5px 7px rgba(36,36,36,0.4);
+  }
+}
+
+
+/* Landing Page */
+
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: #f4f4f4; /* this is the LIGHT color */
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(../img/minneapolis2.jpg) no-repeat bottom center scroll;
+  background-attachment: fixed;
+  background-color: #333333; /* this is the DARK color */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.brand-heading {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.intro-text {
+  font-size: 18px;
+}
+
+.intro-divider {
+  width:60%;
+}
+
+@media(min-width: 767px) {
+
+  .intro {
+    height: 100%;
+    padding: 0;
+  }
+
+  .brand-heading {
+    font-size: 64px !important;
+  }
+
+   .intro-text{
+    font-size: 36px;
+  }
+} // end @media
+
+
+/* Portfolio Section */
+
+.thumbnail {
+  min-height: 100%;
+   position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+
+.thumbnail:hover  {
+  box-shadow: 5px 5px 18px #9b9b9b;
+  z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.03);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.03);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.03);
+    transition: all 200ms ease-in;
+    transform: scale(1.03);
+  }
+
+/*  .footer-text {
+    float:right;
+    margin-top: -20px;
+    padding-right: 68px;
+    font-size: .9em;
+    color: #a5a5a5;
+  }*/
+
+/*.caption  {
+  height: 230px;
+}*/
+
+.caption-footer {
+  height: 50px;
+  top: 410px;
+  text-align: center;
+}
+
+
+
+/* Feedback Section */
+#feedback {
+  color: #fff;
+}
+
+.content-section-feedback {
+  background-color: #286090;
+}
+
+.feedback-btn {
+  width: 100%;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 0 0 0;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.fa-comments {
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.feedback-btn:hover {
+  background-color: #fff;
+  color: #286090;
+  box-shadow: 0px 5px 7px rgba(36,36,36,0.4);
+  transition: 0.5s;
+}
+
+
+
+/* About Section */
+
+.photo {
+  padding:3px;
+  border: 1px solid #dbdbdb;
+}
+
+.photo:hover {
+
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+
+
+/* Content Section */
+
+.content-section {
+  padding: 50px 0 80px 0 !important;
+}
+
+.content-section-about{
+  background-color: #fff;
+}
+
+.content-section h1{
+  font-weight: bold;
+  font-size: 46px;
+}
+
+
+
+
+
+/* Gallery */
+.row_spacing {
+  margin-bottom: 30px;
+}
+
+
+
+
+
+/* Footer */
+
+footer {
+background-color: #181818; /* this is the DARK color */
+}
+
+.content-footer {
+  padding: 60px 0 40px 0;
+  border-top: 10px solid #286090;
+}
+
+.copyright-text {
+  padding-top: 20px;
+  font-size: 12px;
+  color: #bcbcbc;
+}
