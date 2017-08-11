@@ -1,0 +1,173 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Full Width Header/Footer Example 3</title>
+<style type="text/css">
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+strong {
+	font-weight:bold;color:#0289ce;
+}
+
+em {
+	font-style:oblique;
+}
+
+p {
+	margin:15px 0;
+}
+
+.aligncenter, div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+h1 {font-size:180%;}
+h2 {font-size:150%;}
+h3 {font-size:125%;}
+h4 {font-size:100%;}
+h5 {font-size:90%;}
+h6 {font-size:80%;}
+
+a:link {color:#0289ce;}
+a:hover {color:#f64274;}
+
+
+/*End RESET - Begin Full Width CSS*/
+	body {
+		background:#000;
+		color:#fff;
+		font:13px Helvetica,  Arial,  sans-serif
+	}
+
+	.wrap {
+		margin:0 auto;
+		width:900px;
+	}
+	
+	#header, #footer {
+		float:left;
+		padding:15px 0;
+		min-width:100%;
+	}
+	
+	#header {
+		background:#666;
+	}
+	
+	#header .logo {
+		float:left;
+		width:400px;
+	}
+	
+	#header p {
+		float:right;
+		width:400px;
+		margin:0;
+	}
+	
+	#content {
+		padding:15px 0;
+		clear:both;
+	}
+	
+	#footer {
+		background:#333;
+		text-align:center;
+		/*To anchor to bottom of page uncomment the following lines:*/
+		/*position:fixed;
+		bottom:0;*/
+	}
+	
+	#footer a {
+		color:#fff;
+	}
+	
+</style>
+</head>
+
+<body >
+
+<div id="header">
+	<div class="wrap">
+    	<div class="logo">
+        	<a href="#">Logo Of Your Site!</a>
+         </div>
+            <p>This site is amazing!</p>
+    </div>
+</div>
+
+<div class="wrap">
+	<div id="content">
+        <h1>Full Width Header and Footer</h1>
+        <p>Here is another updated version of my method to create a full width header and footer, that contains centered content!</p>
+        
+        <p>'May it please your Majesty,' said Two, in a very humble tone, going  down on one knee as he spoke, 'we were trying—'</p>
+    
+        <p>'I see!' said the Queen, who had meanwhile been examining the roses.  'Off with their heads!' and the procession moved on, three of the  soldiers remaining behind to execute the unfortunate gardeners, who ran  to Alice for protection.</p>
+            
+        <p>'You shan't be beheaded!' said Alice, and she put them into a large  flower-pot that stood near. The three soldiers wandered about for a  minute or two, looking for them, and then quietly marched off after the  others.</p>
+    </div>
+</div>
+
+<div id="footer">
+	<div class="wrap">
+            <p>&copy; 2012 - <a href="http://cssgirl.com">CSSgirl Dev &amp; Design</a></p>
+    </div>
+</div>
+
+
+
+</body></html>

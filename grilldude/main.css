@@ -1,0 +1,94 @@
+﻿/*This is CSS for the flexible box model*/
+
+/* This will reset the css*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+	font: bold 20px Tahoma;
+}
+h2{
+	font: bold 14px Tahoma;
+}
+header, section, footer, aside, nav, article, hgroup{
+	dispay:block;
+}
+
+body{
+	width: 100%;
+	margin: auto;
+}
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+.header {
+	background: black;
+	width: 100%;
+	top: 0;
+	position: fixed;
+}
+.logo {
+	float: left;
+}
+a {
+	text-decoration: none;
+	color: #a80d00;
+}
+li {
+	list-style: none;
+	float: left;
+	margin-left: 30px;
+	padding-top: 90px;
+	font-size: 24px;
+}
+.nav{
+	float: right;
+}
+
+
+
+.footer_container {
+	width: 1000px;
+	margin: 0 auto;
+}
+.the_footer {
+	background: black;
+	width: 100%;
+	bottom: 0;
+	position: fixed;
+}
+.the_footer p {
+	color: white;
+	float: center;
+}
+.the_footer li {
+	color: white;
+	font-size: 16px;
+	float: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="The Grill Dude Website" content="">
+    <meta name="Corey Sader" content="">
+
+    <title>The Grill Dude</title>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    
+
+  </head>
+
+  <body>
+
+    <header class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"></div>
+            <div class="header-icons pull-right">
+              <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+ 
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navhide">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+              <a class="navbar-brand" href="#"><img src="images/gd_logo2.png" alt="The Grill Dude Logo"></a>
+          </div>
+     
+          <div id="navhide" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav pull-left">
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="recipes.html">Recipes</a></li>
+              <li><a href="beefTips.html">Grilling Tips</a></li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="forsale.html">For Sale</a></li>
+              <li><a href="about.html">About Me</a></li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
+      </nav>
+
+
+    <!-- Start of Carousel -->
+    <section class="carousel-section">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="7000">
+
+        <div class="carousel-content text-center">
+          <h2>Welcome Grillers!</h2>
+          <h1>Your One Stop Grilling Shop</h1>
+        </div>
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="photos/home_image.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="photos/home_image2.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="photos/home_image3.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="photos/home_image4.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="photos/home_image5.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <!-- Start of Info Section -->  
+      <section id="info" class="content-section text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="page-header">The Twin Cities Most Reputable Grill Dude!</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis erat tempor, rutrum dui sed, pharetra urna. Nulla ac diam at sem viverra molestie. Quisque elementum dui nulla, dignissim tempor augue varius a. Quisque sollicitudin placerat sapien quis tincidunt.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3">
+                <a href="recipes.html" onmouseover="showColor1();" onmouseout="hideColor1();"><img src="photos/pizza1.jpg" alt="Recipes" class="img-circle img-grow"></a>
+                <span class="center-line" id="line1"></span>
+                <h3 id="text" class="text-center">Recipes</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis erat tempor, rutrum dui sed, pharetra urna.</p>
+            </div>
+            <div class="col-md-3">
+                <a href="beefTips.html" onmouseover="showColor2();" onmouseout="hideColor2();"><img src="photos/gallery1.jpg" alt="Grilling Tips" class="img-circle img-grow" id="img2"></a>
+                <span class="center-line" id="line2"></span>
+                <h3 class="text-center">Grilling Tips</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis erat tempor, rutrum dui sed, pharetra urna.</p>
+            </div>
+            <div class="col-md-3">
+                <a href="gallery.html" onmouseover="showColor3();" onmouseout="hideColor3();"><img src="photos/grill2.jpg" alt="Gallery" class="img-circle img-grow" id="img3"></a>
+                <span class="center-line" id="line3"></span>
+                <h3 class="text-center">Gallery</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis erat tempor, rutrum dui sed, pharetra urna.</p>
+            </div>
+            <div class="col-md-3">
+                <a href="forsale.html" onmouseover="showColor4();" onmouseout="hideColor4();"><img src="photos/forsale1.jpg" alt="For Sale" class="img-circle img-grow" id="img4"></a>
+                <span class="center-line" id="line4"></span>
+                <h3 class="text-center">For Sale</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis erat tempor, rutrum dui sed, pharetra urna.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h2>The <span class="text-bold">Grill</span> Dude</h2>
+        <p class="footer-links">
+          <a href="index.html">Home</a>
+          ·
+          <a href="recipes.html">Recipes</a>
+          ·
+          <a href="beefTips.html">Grilling Tips</a>
+          ·
+          <a href="gallery.html">Gallery</a>
+          ·
+          <a href="forsale.html">For Sale</a>
+          ·
+          <a href="about.html">About Me</a>
+        </p>
+
+        <p class="footer-company-name">The Grill Dude &copy; 2016, All Rights Reserved</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>121 Main Street</span> Minneapolis, Minnesota</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>555 123-4567</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@grilldude.com" target="_blank">support@grilldude.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+  </body>
+</html>

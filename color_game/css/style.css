@@ -1,0 +1,134 @@
+body {
+	background-color: #232323 !important;
+	margin:0;
+	/*font-family: "Montserrat", "Avenir";*/
+	/*font-family: 'Oswald', sans-serif;*/
+	font-family: 'Trirong', serif;
+}
+
+.jumbotron {
+	background-color: #232323;
+}
+
+.jumbotron h1{
+	color: #fff !important;
+	text-align: center !important;
+	font-weight: normal;
+	margin:0;
+	text-shadow: 2px 2px 6px #2b2b2b;
+}
+
+#title{
+	text-transform: uppercase;
+	font-size: 36px;
+	padding-bottom: 20px;
+	font-family: 'Trirong', serif;
+}
+
+#colorDisplay{
+	text-transform: uppercase;
+	font-size: 80px;
+	font-family: 'Trirong', serif;
+}
+
+.selection-section {
+	height: 40px;
+	background-color: #fff;
+	margin-top: -30px;
+	margin-bottom: 40px;
+}
+
+.square {
+	text-align: center;
+	width: 100%;
+	height: 260px;
+	margin: 0 auto;
+	background: green;
+	margin-bottom: 25px;
+	border-radius: 15px;
+	transition: background .6s;
+	-webkit-transition: background .6s;
+	-moz-transition: background .6s;
+	-o-transition: background .6s;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase !important;
+	height: 40px;
+	font-weight: bold !important;
+	color: #232323;
+	letter-spacing: .05em;
+	font-size: 16px !important;
+	padding: 0 20px;
+	margin: 0 3px !important;
+	outline: none;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: al .3s;
+}
+
+button:hover {
+	color: #fff;
+	background: #232323;
+}
+
+#hardBtn {
+	float: right;
+}
+
+#easyBtn {
+	float: right;
+}
+
+
+
+#result {
+	text-transform: uppercase !important;
+	font-weight: bold !important;
+	color: #232323;
+	letter-spacing: .05em;
+	font-size: 16px !important;
+	width: 100%;
+	text-align: center;
+	padding:10px 0;
+}
+
+
+.custom-active {
+	border-radius: 0;
+	background: #232323;
+	color: #fff;
+}
+
+.custom-active:hover {
+	border-radius: 0;
+	background: #232323;
+	color: #fff;
+}
+
+
+
+
+
+
+
+@media(max-width: 1200px){
+	.square {
+		height: 210px;
+	}
+}
+
+@media(max-width: 990px){
+	.square {
+		height: 150px;
+	}
+}
+
+@media(max-width: 768px){
+	.square {
+		width: 150px;
+	}
+}

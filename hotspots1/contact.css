@@ -1,0 +1,492 @@
+﻿@charset "UTF-8";
+*{
+	margin:0px;
+	padding:0px;
+}
+
+/*html5 display rule*/
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, float, address, article, aside, canvas, content, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+margin: 0; padding: 0; border: 0;
+display: block;
+}	
+
+
+body{
+text-align: center;
+background: #fff;
+font: 16px/30px "Helvetica", sans-serif;
+color: #333;
+}
+
+.header{
+height: 100px;
+background: #192112;
+top: 0;
+width: 100%;
+z-index: 10;
+position: fixed;
+box-shadow: 0px 8px 20px rgba(0,0,0,0.65);
+border-bottom: 1px;
+border-style: solid;
+border-color: #293321;
+}
+
+.container {
+width: 1100px;
+margin: 0 auto;
+}
+
+.logo{
+float: left;
+padding-top: 17px
+}
+
+a{
+text-decoration: none;
+color: #fff;
+}
+
+.a-maps{
+text-decoration: none;
+color: black;
+}
+
+li{
+list-style: none;
+float: left;
+margin-left: 20px;
+padding-top: 37px;
+}
+
+.nav{
+float: right;
+}
+
+
+
+#header-content{
+width: 1000px; margin: 0 auto; padding: 35px 0 0 0;
+overflow: hidden;
+}
+
+#header-content h1{
+float: left;
+font-size: 50px; text-transform: uppercase; letter-spacing: 10px;
+color: #fff;
+}
+
+#header-content nav{
+float: right;
+}
+
+#header-content nav li{
+float: left;
+font-size: 20px;
+margin: 0 0 0 50px;
+list-style: none;
+}
+
+#banner{
+background-image: url("photos/background5.jpg");
+background-size: cover;
+width: 100%;
+height: 900px;
+position: fixed;
+top: 0px;
+}
+
+#content{
+position: relative;
+width: 100%;
+height: 900px;
+top: 875px;
+background: white;
+}
+
+.leftcontent {
+position: absolute;
+margin-top: 0px;
+margin-left: auto;
+float: left;
+height:785px;
+width:1000px;
+line-height:30px;
+background-color:#E8E2BA;
+border-style: solid;
+border-color: #C4BE8D;
+border-width: 1px;
+box-shadow: 0px 5px 5px rgba(0,0,0,0.3);  
+padding-top:20px;    
+}
+
+.rightcontent {
+position: absolute;
+margin-top: 0px;
+margin-left: 0px;
+margin-right: auto;
+float:right;
+height:785px;
+width:370px;
+line-height:30px;
+background-color:#E8E2BA;
+border-style: solid;
+border-color: #C4BE8D;
+border-width: 1px;
+box-shadow: 0px 5px 5px rgba(0,0,0,0.3);  
+}
+
+#content-area{
+position: fixed;
+top: 150px;
+left: 150px;
+width: 800px;
+height: 530px;
+border-radius: 15px;
+background: rgba(0, 0, 0, 0.3);
+}
+
+#aboutme-text{
+position: relative;
+text-align: left;
+color: white;
+padding-top: 20px;
+padding-left: 70px;
+padding-right: 70px;
+}
+
+#side-bar2{
+position: fixed;
+top: 100px;
+left: 0px;
+width: 340px;
+height: 850px;
+background-color: #192112;
+box-shadow: 15px 0px 10px rgba(0,0,0,0.5);
+}
+
+#side-bar{
+position: absolute;
+top: 0px;
+left: 0px;
+width: 300px;
+height: 850px;
+background-color: #192112;
+}
+
+#lake-name{
+position: relative;
+top: 40px;
+color: white;
+text-align: left;
+padding-left: 45px;
+}
+
+#lake-line{
+position: relative;
+top: 45px;
+width:80%;
+color: #293321;
+}
+
+#lake-line2{
+position: relative;
+width:80%;
+color: #293321;
+
+}
+
+#lake-text{
+position: relative;
+top: 10px;
+color: white;
+text-align: left;
+padding-left: 45px;
+padding-right: 45px;
+padding-bottom: 25px;
+padding-top: 45px;
+line-height: 145%;
+}
+
+#links{
+position: relative;
+top: 0px;
+color: white;
+text-align: left;
+padding-left: 45px;
+padding-top: 7px;
+padding-bottom: 7px;
+}
+
+#lake{
+position: absolute;
+left: 80px;
+width: 2000px;
+height: 939px;
+}
+
+#photo{
+position: relative;
+top: 185px;
+left: 100px;
+
+}
+
+#my-name{
+font-family: Brush Script MT;
+font-size: 90px;
+color: white;
+padding-top:50px;
+padding-bottom:25px;
+}
+
+
+
+.nav-home2 {
+position: absolute;
+line-height:30px;
+padding-top:20px; 
+padding-left:20px; 
+text-align:left;
+}
+
+.nav-home3{
+position: absolute;
+line-height:30px;
+padding-top:20px; 
+padding-left:20px; 
+text-align:left;
+top: 190px;
+}
+
+.lake-list{
+position: absolute;
+line-height:30px;
+padding-top:25px; 
+padding-left:50px; 
+text-align:left;
+top: 120px;
+}
+
+.table-index{
+padding-left:60px; 
+color: black;
+}
+
+form{
+position: absolute;
+top: 350px;
+width: 68%;
+padding-top: 30px;
+padding-left: 30px;
+}
+
+fieldset{
+text-align: left;
+}
+
+.trophytales{
+position: absolute;
+top: 350px;
+left: 685px;
+width: 25%;
+padding-top: 30px;
+padding-left: 30px;
+
+}
+
+
+.table-form{
+width: 100%;
+text-align: left;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+.form-hotspot {
+border-spacing: 5px 5px;
+border: 1px solid black;
+}
+
+td {
+
+width: 25%;
+}
+
+#content-species{
+width: 100%;
+position: relative;
+top: 100px;
+background: #FEFEFD;
+height: 4100px;
+padding-top: 30px;
+}
+
+#content-lakeinfo{
+width: 100%;
+position: relative;
+top: 100px;
+background: #FEFEFD;
+height: 3350px;
+padding-top: 30px;
+}
+
+#aboutmephoto{
+width: 100%;
+position: relative;
+top: 100px;
+background: #FEFEFD;
+height: 1200px;
+}
+
+
+#contactmecontent{
+width: 100%;
+position: relative;
+top: 265px;
+background: #FEFEFD;
+height: 380px;
+padding-top: 0px;
+line-height: 1.25;
+font-size: 20px;
+}
+
+.logo-lrg{
+position: relative;
+top: 200px;
+padding-top: 30px;
+opacity: .075;
+}
+
+p.bl-crappie{
+margin-top: 60px;
+margin-left: 450px;
+background:#ffffff;
+}
+
+p.sm-bass{
+margin-top: 80px;
+margin-left: 355px;
+background:#ffffff;
+}
+
+p.lg-bass{
+margin-top: 80px;
+margin-left: 340px;
+background:#ffffff;
+}
+
+p.walleye{
+margin-top: 80px;
+margin-left: 310px;
+background:#ffffff;
+}
+
+p.npike{
+margin-top: 80px;
+margin-left: 200px;
+background:#ffffff;
+}
+
+p.muskie{
+margin-top: 80px;
+margin-left: 125px;
+background:#ffffff;
+}
+
+p.para-info{
+font-size:16px;
+background:#ffffff;
+margin-top: 20px;
+margin-right: 330px;
+margin-left: 855px;
+line-height: 1.2;
+}
+
+h1{
+padding-bottom: 15px;
+}
+
+h2{
+margin-right: 370px;
+margin-left: 855px;
+}
+
+h4{
+padding-bottom: 15px;
+}
+
+.list{
+margin: 1.5em 0;
+color:black;
+margin-right: 370px;
+margin-left: 800px;
+
+}
+
+p.lake-img-top{
+margin-top: 2px;
+margin-left: 470px;
+background:#ffffff;
+
+}
+
+p.lake-img{
+margin-top: 3px;
+margin-left: 470px;
+background:#ffffff;
+}
+
+p.lake{
+background:#ffffff;
+margin-right: 450px;
+line-height: 1.5;
+}
+
+.footer{
+background: #192112;
+border-top: 1px;
+border-color: #293321;
+border-style: solid;
+color: #fff;
+bottom: 0px;
+clear: both;
+width: 100%;
+height: 80px;
+z-index: 10;
+position: fixed;
+box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.65);
+}
+
+.table-lakes{
+text-align: left;
+
+margin-top: 10px;
+line-height: 24px;
+}
+
+p.click{
+margin-top: 20px;
+margin-left: 600px;
+margin-bottom:0px;
+font-size: 12px;
+}
+
+.time{
+position: relative;
+top: 250px;
+
+text-align: center;
+}
+
+#info-link{
+color: #0059FF;
+}
+
+#link{
+position: relative;
+left: 44px;
+}
+
+
+
+

@@ -1,0 +1,916 @@
+body {
+	font-family: "Raleway", Arial, sans-serif;
+}
+
+.intro {
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: 160px;
+	background-color: #181818;
+	z-index: 3;
+}
+
+
+.intro .header-icons a{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	padding-top: 3px;
+	color: #ffffff;
+	text-align: center;
+
+	margin-right: 3px;
+	margin-bottom: 3px;
+
+	margin-top: 16px;
+}
+
+.intro .header-icons i{
+	font-size: 20px;
+	color: #6d7173;
+	text-align: center;
+}
+
+.navbar {
+	margin-top: 60px;
+	border-top: 1px solid #a20d00;
+	border-bottom: 1px solid #a20d00;
+	height: 120px;
+	z-index: 100;
+	background-color: #4e0400;
+	box-shadow: 0 3px 9px rgba(0,0,0,.6);
+}
+
+.navbar li {
+	padding: 37px 5px;
+	font-size: 1.25em;
+}
+
+#navhide a {
+  	color: white;
+  }
+
+#navhide a:hover {
+	color: #ff3800;
+}
+
+#navhide .active {
+	color: #ff3800;
+}
+
+@media(min-width: 1020px) and (max-width: 1440px){
+
+  .carousel-content {
+  	margin-top: -30px;
+  }
+
+  .carousel-content h2 {
+	font-size: 3em !important;
+  }
+
+  .carousel-content h1 {
+	font-size: 4em !important;
+  }
+}
+
+@media(min-width: 1020px) and (max-width: 1200px){
+
+  #info img {
+	width: 200px !important;
+	height: 200px !important;
+	margin-top:60px;
+	margin-bottom:20px;
+  }
+}
+
+@media(min-width: 990px) and (max-width: 1020px){
+
+  #info img {
+	width: 180px !important;
+	height: 180px !important;
+	margin-top:60px;
+	margin-bottom:20px;
+  }
+}
+
+@media(min-width: 767px) and (max-width: 990px){
+
+  #info img {
+	width: 340px !important;
+	height: 340px !important;
+	margin-top:60px;
+	margin-bottom:20px;
+  }
+}
+
+@media(min-width: 767px) and (max-width: 1020px){
+  .navbar li{
+    padding: 35px 0;
+	font-size: 1em;
+  }
+
+  .carousel-content {
+  	margin-top: -50px;
+  }
+
+  .carousel-content h2 {
+	font-size: 2.5em !important;
+  }
+
+  .carousel-content h1 {
+	font-size: 3.5em !important;
+  }
+}
+
+@media(max-width: 767px){
+  .navbar li{
+    padding: 3px 0;
+	font-size: 1em;
+	font-weight: bold;
+  }
+
+  #navhide a {
+  	color: white;
+  }
+
+  .carousel-content {
+  	margin-top: -50px;
+  }
+
+  .carousel-content h2 {
+	font-size: 2.25em !important;
+  }
+
+  .carousel-content h1 {
+	font-size: 2.75em !important;
+  }
+
+   #info img {
+	width: 340px !important;
+	height: 340px !important;
+	margin-top:60px;
+	margin-bottom:20px;
+  }
+}
+
+
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  margin-top: -83px;
+}
+
+
+/* NAVBAR */
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 250px;
+  width: auto;
+  padding: 7px 14px;
+}
+
+.navbar-header {
+	height: 118px;
+}
+
+.collapsed {
+	margin-top: 40px;
+}
+
+.navbar-toggle {
+	margin-top: 40px;
+}
+
+
+/* CAROUSEL */
+
+.carousel-section {
+	margin-top: 160px;
+}
+
+.carousel-inner img {
+	width:100%;
+	height: auto;
+}
+
+.carousel-indicators {
+	z-index: 1;
+}
+
+.carousel-indicators li{
+	width: 6px;
+	height: 6px;
+	background-color: rgba(255,255,255,0.15);
+	z-index: 1;
+}
+
+.carousel-indicators .active{
+	width: 8px;
+	height: 8px;
+	background-color: rgba(255,255,255,0.4);
+	z-index: 1;
+}
+
+.carousel-content {
+	position: absolute;
+	top: 35%;
+	left: 20%;
+	right: 22%;
+	z-index: 1;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.carousel-content h2 {
+	font-family: 'Great Vibes', cursive;
+	font-size: 3.5em;
+	color: white;
+	text-shadow: 0 2px 3px rgba(0,0,0,.6);
+}
+
+.carousel-content h1 {
+	font-size: 4.5em;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0 2px 3px rgba(0,0,0,.6);
+}
+
+.content-section {
+	margin-top: 90px;
+	margin-bottom: 160px;
+}
+
+#info img {
+	width: 240px;
+	height: 240px;
+	margin-top:120px;
+	margin-bottom:20px;
+	padding:3px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	z-index: 1;
+}
+
+
+.img-grow {
+   position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
+}
+
+.img-grow:hover{
+  box-shadow: 3px 3px 10px #9b9b9b;
+  z-index: 2;
+  border: 2px solid #ff3800 !important;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.03);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.03);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.03);
+    transition: all 200ms ease-in;
+    transform: scale(1.03);
+  }
+
+
+.center-line {
+	display: block;
+	margin: 10px auto;
+	height: 3px;
+	text-align: center;
+	width: 60px;
+	background-color: #e5e5e5;
+}
+
+
+
+/* RECIPE PAGE */
+
+/* RECIPE SECTION */
+
+.sub-heading h3{
+	margin-top: -46px;
+}
+
+.recipe-section {
+	margin-top: 180px;
+}
+
+.item-header {
+	background-color: #4e0400 !important;
+	border: 1px solid #4e0400 !important;
+}
+/*
+.panel-heading {
+	background-color: green !important;
+	border: 1px solid #4e0400 !important;
+	color: white;
+}
+*/
+
+.panel-title {
+	/*color: white;*/
+}
+
+.footer-text {
+	color: #9c9c9c;
+	font-size: .9em;
+}
+
+.recipe-body {
+	border: 1px solid #dddddd;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.recipe-body img{
+	margin: 5px;
+	float: left;
+}
+
+.recipe-title h4{
+	font-family: "Raleway", Arial, sans-serif;
+	padding-left: 15px;
+	margin-bottom: 55px;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #4e0400;
+}
+
+.recipe-text {
+	padding-left: 15px;
+	font-size: .9em;
+	color: #a80d00;
+}
+
+
+@media(max-width: 990px){
+  .recipe-title h4 {
+    padding-left: 15px;
+    margin-bottom: 55px;
+  }
+
+  .recipe-text {
+  	padding-left: 15px;
+  }
+}
+
+@media(min-width: 990px) and (max-width: 1200px){
+  .recipe-title h4 {
+    padding-left: 40px;
+    margin-bottom: 15px;
+  }
+
+  .recipe-text {
+  	padding-left: 40px;
+  }
+}
+
+
+
+
+
+
+
+.recipe-grow {
+   position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
+}
+
+.recipe-grow:hover{
+  box-shadow: 2px 2px 8px #9b9b9b;
+  z-index: 2;
+  border: 1px solid #ff3800 !important;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.015);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.015);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.015);
+    transition: all 200ms ease-in;
+    transform: scale(1.015);
+  } 
+
+  .recipe-form button {
+  	width: 100%;
+  	background-color: #a80d00;
+  	color: white;
+  }
+
+  .recipe-form button:hover {
+  	background-color: #ff3800;
+  	color: white;
+  }
+
+  .recipe-form .form-group {
+  	margin-top: 20px;
+  }
+
+
+  .twitter-date {
+  	display: inline;
+  	float: right;
+  }
+
+
+
+/* FEATURED RECIPES */
+
+  .back-btn {
+  	float: left;
+  	font-weight: bold;
+  	padding: 5px 0 0 15px;
+  	color: #a80d00;
+  }
+
+  .back-btn:hover {
+  	color: #ff3800;
+  }
+
+  .print-btn {
+  	float: right;
+  	font-weight: bold;
+  	padding: 5px 15px 0 0;
+  	color: #a80d00;
+  }
+
+  .print-btn:hover {
+  	color: #ff3800;
+  }
+
+  .featured-recipe-body a {
+  	text-decoration: none;
+  }
+
+  .featured-recipe-body {
+  	border: 1px solid #dddddd;
+	border-radius: 4px;
+  }
+
+  .featured-recipe-body h3 {
+  	margin: 50px 20px;
+  	font-weight: bold;
+  }
+
+  .featured-recipe-body img {
+  	width: 100%;
+  }
+
+  .recipe-desc {
+  	margin-bottom: 30px;
+  }
+
+  .ingredient-body {
+  	margin-top: 30px;
+  	margin-bottom: 40px;
+  	padding: 0 20px 0 20px;
+  }
+
+  .ingredient-body ul{
+  	list-style: none;
+  }
+
+  .ingredient-heading {
+  	text-transform: uppercase;
+  	font-weight: bold;
+  }
+
+  .ingredient-body ul li{
+  	padding-bottom: 10px;
+  }
+
+  .ingredient-body ol li{
+  	padding-bottom: 10px;
+  }
+
+  #ingredient-footer {
+  	padding: 0 40px;
+  	margin-bottom: 90px;
+  }
+
+  #ingredient-footer p{
+  	font-size: .85em;
+  	color: #9c9c9c;
+  }
+
+  .alignleft {
+  	float: left;
+  }
+
+  .alignright {
+  	float: right;
+  }
+
+.recipe-section .active-item {
+	background-color: #a80d00 !important;
+	color: white;
+	border-left: 1px solid #a80d00;
+	border-right: 1px solid #a80d00;
+}
+
+.active-item:hover {
+	color: #fff !important;
+}
+
+
+
+
+/* GRILLING TIPS PAGE */
+
+.grillingtips-section {
+	margin-top: 180px;
+}
+
+.related-links ul{
+	margin: 20px 0 10px 20px;
+}
+
+.related-links li{
+	list-style: none;
+	padding-bottom: 10px;
+}
+
+.related-links a{
+	color: #333;
+}
+
+.related-links a:visited {
+    text-decoration: none !important;
+    color: #333;
+}
+
+.related-links a:hover {
+    text-decoration: none;
+    color: #ff3800 !important;
+}
+
+/*
+.collapse-heading {
+	background-color: #a80d00 !important;
+	border: 1px solid #a80d00 !important;
+	color: white;
+}
+*/
+
+
+
+.grillingtips-section .active-item {
+	background-color: #a80d00 !important;
+	color: white;
+	border-left: 1px solid #a80d00;
+	border-right: 1px solid #a80d00;
+}
+
+.grillingtips-section .link-spacing {
+	text-align: right;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 15px;
+}
+
+#table_beef tr td:nth-child(1){
+    width:25%;
+}
+
+#table_beef tr td:nth-child(2){
+    width:20%;
+}
+
+.panel-body a{
+	color: #a80d00 !important;
+}
+
+.panel-body a:visited {
+    text-decoration: none !important;
+    color: #a80d00 !important;
+}
+
+.panel-body a:hover {
+    text-decoration: none;
+    color: #ff3800 !important;
+}
+
+
+
+
+
+/* IMAGE GALLERY PAGE */
+.gallery-section {
+	margin-top: 180px;
+}
+
+.gallery-section .row{
+	margin-bottom: 30px;
+}
+
+
+
+
+
+
+/* FOR SALE SECTION */
+
+.forsale-section {
+	margin-top: 180px;
+}
+
+ .lookingToSell button {
+  	width: 90%;
+  	margin-bottom: 15px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	background-color: #a80d00;
+  	color: white;
+  }
+
+  .lookingToSell button:hover {
+  	background-color: #ff3800;
+  	color: white;
+  }
+
+  .lookingToSell .form-group {
+  	margin-top: 20px;
+  }
+
+  .forsale-section .active-item {
+	background-color: #a80d00 !important;
+	color: white;
+	border-left: 1px solid #a80d00;
+	border-right: 1px solid #a80d00;
+}
+
+.item_for_sale .thumbnail {
+	/*min-height: 500px;*/
+}
+
+.item_for_sale img {
+	width: 100%;
+}
+
+.item_for_sale h4 {
+	padding-bottom: 15px;
+}
+
+.item_for_sale h6 {
+	color: #9c9c9c;
+}
+
+.item_for_sale .price {
+	padding-bottom: 15px;
+	font-weight: bold;
+	color: red;
+}
+
+.item_for_sale .btn_more_details {
+	margin: 15px auto;
+	width: 90%;
+}
+
+.sub-heading-forsale h3 {
+	margin-top: 29px;
+}
+
+.item-description {
+	margin: 10px 0 0 0;
+}
+
+.price {
+	margin: 0;
+	padding: 0;
+	color: red;
+}
+
+
+
+
+/* ABOUT ME PAGE */
+.about-section {
+	margin-top: 180px;
+	margin-bottom: -80px;
+}
+
+.about-section img{
+	width: 100%;
+}
+
+.about-section .about_info{
+	margin-top: 40px;
+}
+
+blockquote{
+	margin-top: 15px;
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+	font-family: "Raleway", Arial, sans-serif;
+}
+
+.footer-distributed{
+	background-color: #181818;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+.footer-distributed .footer-left .text-bold{
+	font-weight: bold;
+	color: #a80d00; /* dark red color */
+}
+
+/* The company logo */
+
+.footer-distributed h2{
+	color:  #ffffff;
+	font-family: "Raleway", Arial, sans-serif;
+	margin-top: 30px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #a80d00; /* dark red color */
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+
+
+
+
+
+

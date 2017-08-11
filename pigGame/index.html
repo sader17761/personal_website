@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <!-- Bootstrap: Latest compiled and minified CSS -->
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        
+        <title>Pig Game</title>
+    </head>
+
+    <body>
+
+        <audio id="winAudio">
+            <source src="sound/winning-sound-effect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <audio id="rollAudio">
+            <source src="sound/dicerollshort.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <audio id="loserAudio">
+            <source src="sound/loser.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">0</div>
+                </div>
+                <div id="scoreDivider1">Player 1 Score: <span id="player0-score"> 0</span></div>
+            </div><!-- End of 'player-0-panel' -->
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+                <div id="scoreDivider2">Player 2 Score: <span id="player1-score"> 0</span></div>
+            </div><!-- End of 'player-1-panel' -->
+            
+            <button class="myButtons button-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="myButtons button-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="myButtons button-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+
+            <div id="final-score-container">
+                <input type="text" placeholder="Set Final Score" class="final-score"> 
+                <!-- <div id="set-score">Winning Score: <span id="winning-score">0</span></div> -->
+                <!--<p id="final-score-note">* If no score is set, 100 will be the default score.</p>-->
+            </div>
+
+            <img src="img/dice/dice-0.png" alt="Dice" class="dice-one">
+            <img src="img/dice/dice-0.png" alt="Dice" class="dice-two">
+        </div><!-- End of 'Wrapper' -->
+
+
+                    <div id="rules-button">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                          Game Rules
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Pig Game Rules:</h4>
+                          </div>
+                          <div class="modal-body">
+                            <ul>
+                                <li>The 'Pig Game' consists of 2 players, playing in rounds.</li>
+                                <li>During each turn, a player rolls the dice as many times as he/she wishes. The face value of each roll gets added to his/her CURRENT score.</li>
+                                <li>After each roll, the player can choose to 'Hold', which means that his/her CURRENT score then gets added to his/her TOTAL score, and the roll of the dice goes to the other player.</li>
+                                <li>If the player rolls a 1 with either die, all of his/her CURRENT score gets taken away, and the roll of the dice goes to the other player.</li>
+                                <li>If the player rolls a double 1 (snake eyes), all of his/her TOTAL and CURRENT scores gets taken away (set back to 0), and the roll of the dice goes to the other player.</li>
+                                <li>Play continues until the first player reaches 100 TOTAL points (the default score).</li>
+                                <ul>
+                                    <li>To play to a score other than 100, update the 'SET FINAL SCORE' input field at the bottom of the game board to which ever score you wish.  This can be done at any point before or during the game.</li>
+                                </ul>
+                            </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div><!-- End of 'modal-content' -->
+                      </div><!-- End of 'modal-dialog' -->
+                    </div><!-- End of 'modal fade' -->
+
+                    
+                    <button type="button" class="btn btn-primary btn-sm" id="reset-button">Reset All</button>
+                   
+
+
+        
+        <script src="js/jquery-3.1.1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
